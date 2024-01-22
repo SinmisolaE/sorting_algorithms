@@ -14,7 +14,7 @@ void quick_sort(int *array, size_t size)
  * sort - gives the low and high index
  * @array: the array
  * @low: the low index
- * high: the highest index
+ * @high: the highest index
  * @size: size or length of array
  */
 void sort(int *array, size_t low, size_t high, size_t size)
@@ -38,6 +38,7 @@ void sort(int *array, size_t low, size_t high, size_t size)
  * @low: lowest index
  * @high: highest index
  * @size: size of array
+ * Return: returns index of pivot when placed in right position
  */
 size_t partition(int *array, size_t low, size_t high, size_t size)
 {
@@ -76,6 +77,7 @@ size_t partition(int *array, size_t low, size_t high, size_t size)
 void swap(int *a, int *b)
 {
 	int c;
+
 	c = *a;
 	*a = *b;
 	*b = c;
