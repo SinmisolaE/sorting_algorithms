@@ -11,7 +11,6 @@ void cocktail_sort_list(listint_t **list)
 
 	if (!list || !*list || !(*list)->next)
 		return;
-
 	cur = *list;
 	move = *list;
 
@@ -31,8 +30,6 @@ void cocktail_sort_list(listint_t **list)
 		if (change != 1)
 			break;
 		change = 0;
-
-
 		while (cur->prev)
 		{
 
@@ -47,12 +44,13 @@ void cocktail_sort_list(listint_t **list)
 		}
 		if (change != 1)
 			break;
+		move = move->next;
 	}
-	move = move->next;
 }
 
 /**
  * swap_list - swaps list
+ * @list: the head of list
  * @first: first node
  * @sec: second node
  */
