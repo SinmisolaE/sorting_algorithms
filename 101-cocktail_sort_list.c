@@ -13,9 +13,7 @@ void cocktail_sort_list(listint_t **list)
 		return;
 	cur = *list;
 	change = 1;
-	/**
-	 * move = *list;
-	 */
+
 	while (change)
 	{
 		change = 0;
